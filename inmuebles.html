@@ -1,0 +1,37 @@
+<html ng-app="myApp" id="myApp">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src="./main.js"></script>
+
+</head>
+
+
+    <body ng-controller="myController">
+        {{mensaje}}
+        <label for="Nombre">Nombre</label><br>
+        <input type="text" class="form-control input-lg text-center" placeholder="Inserta el nombre del inmueble" id="nombre" ng-model="formData.nombre"><br>
+        <label for="tipo">Tipo</label><br>
+        <input type="text" class="form-control input-lg text-center" placeholder="Inserta un tipo de inmueble" ng-model="formData.tipo"><br>
+        <label for="ubicacion">Descripcion</label><br>
+        <input type="text" class="form-control input-lg text-center" placeholder="Inserta una descripción del inmueble" ng-model="formData.descripcion"><br>
+        <label for="ubicacion">Ubicacion</label><br>
+        <input type="text" class="form-control input-lg text-center" placeholder="Inserta una ubicacion del inmueble" ng-model="formData.ubicacion"><br>
+        <label for="ubicacion">numhabitaciones</label><br>
+        <input type="text" class="form-control input-lg text-center" placeholder="Inserta una ubicacion del inmueble" ng-model="formData.numhabitaciones"><br>
+        <label for="ubicacion">precio</label><br>
+        <input type="text" class="form-control input-lg text-center" placeholder="Inserta una ubicacion del inmueble" ng-model="formData.precio"><br>
+        <label for="ubicacion">imagenes</label><br>
+        <input type="text" class="form-control input-lg text-center" placeholder="Inserta una ubicacion del inmueble" ng-model="formData.imagenes"><br>
+                
+        <br>
+           
+    
+    
+        <button class="btn btn-primary btn-lg" ng-click="RegistrarInmueble()">Registrar inmueble</button>
+    
+    
+    </body>
+
+
+
+</html>

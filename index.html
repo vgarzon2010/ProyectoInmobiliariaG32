@@ -1,0 +1,47 @@
+<html ng-app="myApp" id="myApp">
+ <head>
+     <meta name="viewport" content="width=device-width" />
+    <h1>Inmobiliaria Istari</h1>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src="./main.js"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+ <body ng-controller="myController">
+     {{msg}}
+           <a href="javascript:;" id="lbtnTest"> Llamar </a>
+
+           <form>
+               {{todos}}
+            <div class="form-group">
+                <p>Casas: <img src= alt="Canada"></p>
+            </br>
+            </br>
+            <h2>Crea tu Cuenta de Registro</h2>
+            
+            <h3 {background-color: green; }
+                <label for="valor">Documento de Identidad</label>
+                <input type="text" class="form-control input-lg text-center" placeholder="Inserta el documento" id="cedula" ng-model="formData.cedula">
+                </br>
+                </br>
+                <label for="valor">Nombre</label>
+                <input type="text" class="form-control input-lg text-center" placeholder="Inserta el nombre" ng-model="formData.nombre">
+                </br>
+                </br>
+                <label for="valor">Apellidos</label>
+                <input type="text" class="form-control input-lg text-center" placeholder="Inserta los apellidos" ng-model="formData.apellidos">
+                </br>
+                </br>
+                <label for="valor">Clave</label>
+                <input type="text" class="form-control input-lg text-center" placeholder="Inserta la clave" ng-model="formData.clave">
+                </br>
+            
+            </div>
+           
+            </br>
+            <button class="btn btn-primary btn-lg" ng-click="createTodo()">Insertar</button>
+        </form>
+ </body>
+ </html>
