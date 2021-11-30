@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html ng-app="myApp" id="myApp">
+    <head>
+        <meta charset="UTF-8">
+        <title>Zonas</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+        <script src="./main.js"></script>
+    </head>
+    <body ng-controller="myController">
+        <form>
+            <div class="form-group">
+                <label for="lblBarrio">Barrio :</label>
+                <input type="text" class="form-control input-lg text-center" placeholder="Escriba el nombre del barrio" id="Barrio" ng-model="formData.barrio">
+                </br></br>
+                <label for="lblCiudad">Ciudad :</label>
+                <input type="text" class="form-control input-lg text-center" placeholder="Escriba el nombre de la ciudad" id="Ciudad" ng-model="formData.ciudad">
+                </br></br>
+                <label for="lblZona">Zona :</label>
+                <input type="text" class="form-control input-lg text-center" placeholder="Escriba el nombre de la zona" id="Zona" ng-model="formData.zona">
+                </br></br>
+                <label for="lblEstrato">Estrato :</label>
+                <input type="text" class="form-control input-lg text-center" placeholder="Escriba el número del estrato" id="Estrato" ng-model="formData.estrato">
+                </br></br>
+            </div>
+            <button class="btn btn-primary btn-lg" ng-click="registrarZona()">Registrar</button>
+            </br></br>
+            {{mensaje}}
+        </form>
+    </body>
+</html>
