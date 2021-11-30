@@ -10,11 +10,15 @@ const userscheme=new mongoose.Schema(
             type: String
         },
 
+        direccion: {
+            type: String
+        },
+
         descripcion: {
             type: String
         },
 
-        ubicacion: {
+        zona: {
             type: Object
         },
 
@@ -32,4 +36,4 @@ const userscheme=new mongoose.Schema(
 
 
 })
-module.exports= mongoose.model('inmuebles', userscheme)
+module.exports= mongoose.model('inmueble', userscheme)
